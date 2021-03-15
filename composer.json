@@ -1,6 +1,13 @@
 {
-    "name": "php-courses/file-converter-starter",
+    "name": "mashuk/file-converter-starter",
     "description": "Initial repository to start writing file converter",
+    "authors": [
+        {
+            "name": "Dzmitry Mashuk",
+            "email": "DzmitryMashuk@gmail.com",
+            "role": "Developer"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "FileConverter\\": "src/"

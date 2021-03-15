@@ -13,7 +13,7 @@ class ParsingJSON implements Parsing
 
     public function writeFile(array $data, string $outputFilePath)
     {
-        $fp = fopen("$outputFilePath",  "w");
+        $fp = fopen($outputFilePath, 'w');
         fwrite($fp, json_encode($data));
         fclose($fp);
     }

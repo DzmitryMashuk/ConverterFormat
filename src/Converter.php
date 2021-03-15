@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace FileConverter;
 
-use FileConverter\FormatFactory;
 use SplFileInfo;
 
 class Converter

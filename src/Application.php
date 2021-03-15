@@ -8,7 +8,7 @@ use Exception;
 
 class Application
 {
-    public function run(string $filename, string $outputFormat, $outputFilePath)
+    public function run(string $filename, string $outputFormat, string $outputFilePath)
     {
         $converter = new Converter($filename);
 

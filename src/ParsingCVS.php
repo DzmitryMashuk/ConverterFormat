@@ -8,7 +8,7 @@ class ParsingCVS implements Parsing
 {
     public function parseFile(\SplFileObject $file) : array
     {
-        $data = array();
+        $data = [];
 
         while(!$file->eof()) {
             $data[] = $file->fgetcsv();
@@ -19,7 +19,7 @@ class ParsingCVS implements Parsing
 
     public function writeFile(array $data, string $outputFilePath)
     {
-        $fp = fopen("$outputFilePath",  "w");
+        $fp = fopen($outputFilePath, 'w');
 
         foreach ($data as $fields) {
             fputcsv($fp, $fields);

@@ -16,7 +16,7 @@ class FormatFactory
     public function getInstance()
     {
         switch ($this->inputFormat) {
-            case "json":
+            case 'json':
                 return new ParsingJSON();
             case 'xml':
                 return new ParsingXML();
